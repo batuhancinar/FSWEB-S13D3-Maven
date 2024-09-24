@@ -1,12 +1,17 @@
 package org.example;
-public class Person {
+public class Person{
 
-     String firstName;
-     String lastName;
-     int age;
-     String favoriteColor;
-     String phoneNumber;
-     String email;
+    String firstName;
+
+    String lastName;
+
+    int age;
+
+    String favoriteColor;
+
+    String phoneNumber;
+
+    String email;
 
 
     public Person(String firstName, String lastName, int age) {
@@ -14,8 +19,8 @@ public class Person {
         this.lastName = lastName;
         this.age = age;
     }
-    public Person(String firstName, String lastName, int age,
-                  String favoriteColor, String phoneNumber, String email){
+
+    public Person(String firstName, String lastName, int age, String favoriteColor, String phoneNumber, String email){
         this(firstName, lastName, age);
         this.favoriteColor = favoriteColor;
         this.email = email;
@@ -24,20 +29,25 @@ public class Person {
     public String getFirstName(){
         return firstName;
     }
+
+
     public String getLastName(){
-        return lastName;
+        return this.lastName;
     }
 
     public int getAge() {
-        return age;
+
+        return this.age;
     }
+
     public Boolean isTeen(){
-        if(age > 13&& age <19){
-            return true;
-        }
-        else
-            return false;
+        return  this.age > 13 && age < 19;
     }
+    public String getFavoriteColor(){
+        return this.favoriteColor;
+    }
+
+
 }
 
 

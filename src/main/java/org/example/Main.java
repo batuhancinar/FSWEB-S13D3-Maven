@@ -1,13 +1,15 @@
 package org.example;
 
-public class Main {
-    Person person = new Person("John", "Doe", 20);
+import org.w3c.dom.ls.LSOutput;
 
-System.out.println("Firstname: " + person.getFirstName());
+public class Main  {
+    public static void main(String[] args){
+        Person person = new Person("John", "Doe", 20);
 
-System.out.println("LastName: " + person.getLastName());
+        System.out.println("Firstname: " + person.getFirstName());
 
-System.out.println("Age: " + person.getAge());
+        System.out.println("LastName: " + person.getLastName());
+
+        System.out.println("Age: " + person.getAge());
+    }
 }
-
-
