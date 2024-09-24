@@ -9,7 +9,7 @@ public class Person{
 
     String favoriteColor;
 
-    String phoneNumber;
+    int phoneNumber;
 
     String email;
 
@@ -20,7 +20,7 @@ public class Person{
         this.age = age;
     }
 
-    public Person(String firstName, String lastName, int age, String favoriteColor, String phoneNumber, String email){
+    public Person(String firstName, String lastName, int age, String favoriteColor, int phoneNumber, String email){
         this(firstName, lastName, age);
         this.favoriteColor = favoriteColor;
         this.email = email;
@@ -38,6 +38,14 @@ public class Person{
     public int getAge() {
 
         return this.age;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public Boolean isTeen(){
