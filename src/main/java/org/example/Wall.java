@@ -4,27 +4,36 @@ public class Wall {
     double width;
     double height;
     public Wall (double width, double height){
-        this.width = width;
-        this.height= height;
+        this.width = width< 0 ? 0 : width;
+        this.height= height< 0 ? 0 : height;
     
     }
 
     public double getWidth() {
-        return width;
+        return this.width;
     }
 
     public double getHeight() {
-        return height;
+        return this.height;
     }
 
-    public double setWidth(double width) {
-        this.width = width;
-        if(width < 0){
-            width =0;
-        }
-        return width;
-    }
+
     public double getArea(){
-        return width*height;
+        return this.width* this.height;
     }
-}
+
+
+    public void setWidth(double width) {
+        this.width = width< 0 ? 0 : width;
+
+        }
+
+    public void setHeight(double height) {
+        this.height = height< 0 ? 0 : height;
+    }
+
+    }
+
+
+
+
